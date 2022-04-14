@@ -1,0 +1,394 @@
+@media only screen and (min-width: 800px)  {
+    .ImagePresentation{
+      display: flex;
+      justify-content: flex-end;
+    }
+    
+    .ImagePresentation img {
+      position: absolute;
+      border-radius: 50%;
+      margin-top: 10%;
+      margin-right: 150px;
+    }
+    
+    
+    .social-media-list {
+      display: visible;
+    }
+    .social-media-list {
+      position: relative;
+      font-size: 22px;
+      width: 50%;
+      margin: 0 auto;
+      margin-left: 10%;
+      padding: 0;
+    }
+    
+    }
+    
+    body {
+      background-image: linear-gradient(180deg, #9fb7f5 0, #6c90d8 50%, #2c6bbb 100%);
+      background-attachment: fixed;
+    }
+    
+    .social-media-list li a {
+      color: #fff;
+    }
+    
+    .social-media-list li {
+      position: relative; 
+      display: inline-block;
+      height: 60px;
+      width: 60px;
+      text-align: center;
+      margin: 10px 3px;
+      line-height: 60px;
+      border-radius: 50%;
+      color: #fff;
+      background-color: rgb(27,27,27);
+      cursor: pointer; 
+      transition: all .2s ease-in-out;
+    }
+    
+    .social-media-list li:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      border-radius: 50%;
+      opacity: 0;
+      box-shadow: 0 0 0 1px #fff;
+      transition: all .2s ease-in-out;
+    }
+    
+    .social-media-list li:hover {
+      background-color: #fff; 
+    }
+    
+    .social-media-list li:hover:after {
+      opacity: 1;  
+      transform: scale(1.12);
+      transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+    }
+    
+    .social-media-list li:hover a {
+      color: #000;
+    }
+    
+    /*
+        BANDEAU DU HAUT
+    */
+    
+    ul.topnav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      font-family: arial;
+      text-align: left;
+      width: 100%;
+      position: sticky;
+      top: 0;
+    }
+    
+    ul.topnav li {
+      float: left;
+    }
+    
+    ul.topnav li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      float: left;
+      font-size: 17px;
+      border-right: 1px solid #bbb;
+    }
+    
+    ul.topnav li a:hover:not(.active) {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    ul.topnav li a.active {
+      background-color: #6C90D8;
+    }
+    
+    ul.topnav li.navright {
+      float: right;
+    }
+    
+    @media screen and (max-width: 720px) {
+      ul.topnav li {
+          width: 100%;
+      }
+    
+      ul.topnav a {
+          width: 100%;
+      }
+    }
+    
+    /*
+      FIN DU BANDEAU DU HAUT
+    */
+    
+    /* main */
+    /*
+    .conteneurCercle{
+      display: flex;
+      justify-content:flex-end ;
+    }
+    .cercle{
+    z-index: -1;
+    position: absolute;
+      background:#6C90D8;
+      border-radius: 1200px 0 0 0;
+      bottom: 0;
+      width:1200px;
+      height:1200px;
+      border:2px solid #6C90D8; 
+    }*/
+    
+    /* Petite description gauche page d'Acceuil */
+    
+    .identité {
+     display: flex;
+     padding-top: 25%;
+     padding-left: 10%;
+    }
+    
+    .identité h1:nth-child(1){
+     color: #111110;
+     font-weight: bold;
+    }
+    
+    .identité h1:nth-child(2){
+    color: grey;
+    padding-left: 20px;
+    }
+    .Job h1{
+      padding-left: 10%;
+      color: #111110;
+      font-weight: bold;
+      padding-top: 5px;
+    }
+    .statue h2{
+    color: rgb(119, 119, 119);
+    font-size: 16px;
+    padding-left: 10%;
+    }
+    
+    @media only screen and (max-width: 800px)  {
+      body{
+        background-color:black;
+      }
+      .social-media-list {
+        position: relative;
+        font-size: 22px;
+        width: 100%;
+        margin: 0 auto;
+        margin-left: 35%;
+        padding: 0;
+      }
+      .ImagePresentation{
+        display: flex;
+        justify-content:center;
+        z-index: -1;
+      }
+    
+      .ImagePresentation img {
+        position: absolute;
+        border-radius: 50%;
+        margin-top: 75%;
+        margin-left: 100%;
+      }
+    
+      .identité {
+        display: block;
+       }
+      .identité h1:nth-child(1){
+       text-align: center;
+       }
+       
+       .identité h1:nth-child(2){
+         text-align:center;
+       }
+       .statue h2{
+        text-align: center;
+        }
+      .Job h1{
+        color: white;
+        text-align: center;
+      }
+    
+      .identité {
+        text-align: center;
+       }
+       
+       .identité h1:nth-child(1){
+        color: #e9e9e1;
+        font-weight: bold;
+       }
+       
+       .identité h1:nth-child(2){
+       color: grey;
+       padding-left: 20px;
+       }
+       
+       .statue h2{
+       color: #e9e9e1;
+       font-size: 16px;
+       padding-left: 10%;
+       }
+    
+      nav{
+        display: none;
+      }
+      *{
+        font-family: 'Lato', sans-serif;
+        font-family: 'Oswald', sans-serif;
+      }
+      .wrapper{
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        right: -100%;
+        height: 100%;
+        width: 100%;
+        background: #000;
+        transition: all 0.6s ease-in-out;
+      }
+      #active:checked ~ .wrapper{
+    
+        right:0;
+      }
+      .menu-btn{
+        position: absolute;
+        z-index: 2;
+        right: 20px;
+        top: 20px;
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+      }
+      .menu-btn span,
+      .menu-btn:before,
+      .menu-btn:after{
+        content: "";
+        position: absolute;
+        top: calc(50% - 1px);
+        left: 30%;
+        width: 40%;
+        border-bottom: 2px solid rgb(255, 255, 255);
+        transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+      }
+      .menu-btn:before{
+        transform: translateY(-8px);
+      }
+      .menu-btn:after{
+        transform: translateY(8px);
+      }
+      
+      
+      .close {
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+      }
+      
+      
+      .wrapper ul{
+        position: absolute;
+        top: 60%;
+        left: 15%;
+        width:100%;
+        height: 90%;
+        transform: translate(-50%, -50%);
+        list-style: none;
+        text-align: center;
+      }
+      .wrapper ul li{
+        height: 10%;
+        width:100%;
+        margin: 15px 0;
+      }
+      .wrapper ul li a{
+        text-decoration: none;
+        font-size: 30px;
+        font-weight: 500;
+        padding: 5px 30px;
+        color: #fff;
+        border-radius: 50px;
+        position: absolute;
+        width:100%;
+        line-height: 50px;
+        margin: 5px 30px;
+        text-align: center;
+        opacity: 0;
+        transition: all 0.3s ease;
+        transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+      }
+      .wrapper ul li a:hover:after{
+        transform: scaleY(1);
+      }
+      .wrapper ul li a:hover{
+        color: #1a73e8;
+      }
+    
+      input[type="checkbox"]{
+        display: none;
+      }
+    
+      .content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        text-align: center;
+        width: 100%;
+        color: #202020;
+      }
+      .content .title{
+        font-size: 40px;
+        font-weight: 700;
+      }
+      .content p{
+        font-size: 35px;
+        font-weight: 600;
+      }
+      
+      #active:checked ~ .wrapper ul li a{
+        opacity: 1;
+      }
+      .wrapper ul li a{
+        transition: opacity 1.2s, transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+        transform: translateX(100px);
+      }
+      #active:checked ~ .wrapper ul li a{
+        transform: none;
+        transition-timing-function: ease, cubic-bezier(.1,1.3,.3,1); 
+         transition-delay: .6s;
+        transform: translateX(-100px);
+      }
+      
+      
+    }
+    
+    @media only screen and (max-width: 1000px) {
+      .nomNav p{
+      display: none;
+      }
+    }
+    

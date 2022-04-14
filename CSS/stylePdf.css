@@ -1,0 +1,200 @@
+/*
+    HTML
+*/
+
+* {
+    margin:0;
+    padding:0;
+}
+
+html {
+    width: auto;
+    height: auto;
+}
+
+body {
+    background-image: linear-gradient(180deg, #9fb7f5 0, #6c90d8 50%, #2c6bbb 100%);
+    /*background-image:url("../Images/BackgroundPf.jpg");*/
+    background-attachment: fixed;
+}
+
+/*
+    BANDEAU DU HAUT
+*/
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    font-family: arial;
+    text-align: left;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+ul.topnav li {
+    float: left;
+}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: left;
+    font-size: 17px;
+    border-right: 1px solid #bbb;
+}
+
+ul.topnav li a:hover:not(.active) {
+    background-color: #ddd;
+    color: black;
+}
+
+ul.topnav li a.active {
+    background-color: #6C90D8;
+}
+
+ul.topnav li.right {
+    float: right;
+}
+
+@media screen and (max-width: 720px) {
+    ul.topnav li {
+        width: 100%;
+    }
+
+    ul.topnav a {
+        width: 100%;
+    }
+}
+
+/*
+    FIN DU BANDEAU DU HAUT
+*/
+
+/*
+    CORPS
+*/
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+/*
+    FIN DU CORPS
+*/
+
+/*
+    BANDEAU DU BAS
+*/
+
+.botnav {
+    padding: 20px;
+}
+
+ul.botnav {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+@media screen and (max-width:800px) {
+    ul.botnav {
+        flex-direction: column;
+    }
+}
+
+ul.botnav li a {
+    text-decoration: none;
+    color: white;
+}
+
+ul.botnav li a.botActive {
+    color: #333;
+    font-weight: bold;
+}
+
+/*
+    FIN DU BANDEAU DU BAS
+*/
+
+/*
+    Others
+*/
+
+main {
+    margin: 20px;
+}
+
+h1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+    color: black;
+    font-family: 'Muli', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 2rem auto 1rem;
+    line-height: 1;
+}
+
+a {
+    color: inherit;
+    transition: 0.25s all ease-in-out;
+}
+
+a:visited {
+    color: #333;
+}
+
+/********************************
+* Scrollbar
+*********************************/
+
+::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+    margin: 10px;
+    height: 20px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    margin: 10px;
+    background-color: #333;
+    border-radius: 10px;
+}
